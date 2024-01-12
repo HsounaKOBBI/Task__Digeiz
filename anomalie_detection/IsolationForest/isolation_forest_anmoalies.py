@@ -8,7 +8,7 @@ def detection_anomalies(frames):
     flattened_frames = [frame.flatten() for frame in frames]
 
     # Entraîner un modèle Isolation Forest pour détecter les anomalies
-    model = IsolationForest(n_estimators=50)
+    model = IsolationForest(n_estimators=220)
     model.fit(flattened_frames)
 
     # Prédire les anomalies dans les images
